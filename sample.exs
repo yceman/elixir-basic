@@ -21,3 +21,17 @@ IO.puts("#{upper}")
 
 lower = String.downcase("HELLÖ")
 IO.puts("#{lower}")
+
+defmodule User do
+	defstruct name: "John", age: 27
+end
+
+defmodule Main do
+  def main do
+    john = %User{}
+    IO.puts(john.name)
+    IO.puts(john.age)
+  end
+end
+
+Main.main
